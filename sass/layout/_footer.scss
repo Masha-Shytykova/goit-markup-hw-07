@@ -22,9 +22,7 @@
 .address {
   margin-top: 20px;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 24px, 0.03em);
 }
 
 .footer-address {
@@ -42,10 +40,7 @@
 .join {
   display: inline-block;
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 16px, 0.03em, 700);
   text-transform: uppercase;
 
   color: #ffffff;
@@ -80,9 +75,7 @@
   color: #ffffff;
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font(16px, 20px, 0.03em);
 
     color: rgba(255, 255, 255, 0.6);
   }
@@ -93,16 +86,12 @@
   min-width: 200px;
 
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 
   padding: 10px 29px;
   border-radius: 4px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  @include font(16px, 30px, 0.06em, 700);
   cursor: pointer;
   outline: none;
 

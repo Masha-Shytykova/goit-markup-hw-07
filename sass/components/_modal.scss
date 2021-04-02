@@ -149,16 +149,14 @@
     cursor: pointer;
     border-radius: 1px;
     background-image: url('../images/backgroundicon/check.svg');
-
-    .form-input-policy:focus + & {
-      box-shadow: 0 0 0 1px var(--accent-color);
-    }
-
-    .form-input-policy:checked + & {
-      background-color: var(--accent-color);
-      background-image: url('../images/backgroundicon/icon-check.svg');
-    }
   }
+}
+.form-input-policy:focus + .form-label-policy::before {
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+.form-input-policy:checked + .form-label-policy::before {
+  background-color: var(--accent-color);
+  background-image: url('../images/backgroundicon/icon-check.svg');
 }
 
 .form-link-policy {
@@ -166,20 +164,6 @@
 }
 
 .form-button {
+  @extend %button;
   align-self: center;
-  min-width: 200px;
-  padding: 10px 32px;
-  border-radius: 4px;
-  border: none;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  outline: none;
-
-  color: #ffffff;
-  background-color: var(--accent-color);
 }
