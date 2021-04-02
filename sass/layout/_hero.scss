@@ -1,4 +1,4 @@
-.section-hero {
+.hero {
   background: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -11,13 +11,13 @@
   margin: 0 auto;
 }
 
-.hero {
+.hero__container {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -28,6 +28,6 @@
   color: #ffffff;
 }
 
-.hero-button {
+.hero__button {
   @extend %button;
 }

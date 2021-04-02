@@ -1,19 +1,19 @@
-.section-advadvantages {
+.advantages {
   padding-top: 94px;
 }
-.advantages {
+.advantages__list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.advantages-item {
+.advantages__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.advantages-item::before {
+.advantages__item::before {
   display: block;
   content: '';
   height: 120px;
@@ -39,13 +39,13 @@
   background-image: url('../images/backgroundicon/astronaut-1.svg');
 }
 
-.advantages-title {
+.advantages__title {
   margin-bottom: 10px;
   @include font(14px, 16px, 0.03em, 700);
   text-transform: uppercase;
 }
 
-.advantages-text {
+.advantages__text {
   @include font(14px, 24px, 0.03em);
   color: var(--secondary-color);
 }
