@@ -17,8 +17,9 @@
   display: flex;
 }
 
-.contact-list {
+.contact__list {
   display: flex;
+  margin-left: auto;
 }
 
 .navigation__item:not(:last-child) {
@@ -60,11 +61,7 @@
   }
 }
 
-.contact-list {
-  margin-left: auto;
-}
-
-.contact-list__item {
+.contact__item {
   display: flex;
   align-items: center;
 
@@ -73,11 +70,11 @@
   }
 }
 
-.contact-list__icon {
+.contact__icon {
   margin-right: 10px;
 }
 
-.contact-list__link {
+.contact__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
