@@ -93,7 +93,7 @@ img {
   color: #000000;
 }
 
-.logo--web {
+.logo__web {
   color: var(--accent-color);
 }
 
